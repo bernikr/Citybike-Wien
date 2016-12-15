@@ -1,0 +1,8 @@
+{
+  "name": "Citybike Wien Map",
+  "short_name": "Citybike",
+  "description": "A map for citybike avalability in vienna",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "any"
+}
