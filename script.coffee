@@ -9,7 +9,7 @@ stations = []
 $ ->
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 48.2082, lng: 16.3738}
-    zoom: 12
+    zoom: 13
     scaleControl: true
   })
 
