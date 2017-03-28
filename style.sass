@@ -18,34 +18,39 @@ header
 #map
 	flex: 1 1 auto
 
+.toggle-holder
+	text-align: center
 
-.switch
-	position: relative
-	display: inline-block
+	span
+		display: inline-block
+		vertical-align: middle
 
-	margin: 10px
+	.switch
+		display: inline-block
+		vertical-align: middle
+		margin: 10px
 
-	input
-		display: none
+		input
+			display: none
 
-	.slider-box
-		position: relative
-		width: 52px
-		padding: 4px
-
-		border-radius: 26px
-		background-color: #ccc
-
-		.slider
+		.slider-box
 			position: relative
-			height: 26px
-			width: 26px
+			width: 52px
+			padding: 4px
 
-			background-color: white
 			border-radius: 26px
+			background-color: #ccc
 
-			cursor: pointer
-			transition: .4s
+			.slider
+				position: relative
+				height: 26px
+				width: 26px
 
-	input:checked ~ * .slider
-		transform: translateX(26px)
+				background-color: white
+				border-radius: 26px
+
+				cursor: pointer
+				transition: .4s
+
+		input:checked ~ * .slider
+			transform: translateX(26px)
