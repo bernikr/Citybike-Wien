@@ -22,40 +22,30 @@ header
 .switch
 	position: relative
 	display: inline-block
-	width: 60px
-	height: 34px
+
+	margin: 10px
 
 	input
 		display: none
 
-	.slider
-		position: absolute
-		cursor: pointer
-		top: 0
-		left: 0
-		right: 0
-		bottom: 0
-		background-color: #ccc
-		transition: .4s
+	.slider-box
+		position: relative
+		width: 52px
+		padding: 4px
 
-		&:before
-			position: absolute
-			content: ""
+		border-radius: 26px
+		background-color: #ccc
+
+		.slider
+			position: relative
 			height: 26px
 			width: 26px
-			left: 4px
-			bottom: 4px
+
 			background-color: white
-			-webkit-transition: .4s
+			border-radius: 26px
+
+			cursor: pointer
 			transition: .4s
 
-	input:checked + .slider
-		background-color: #2196F3
-
-
-	input:focus + .slider
-		box-shadow: 0 0 1px #2196F3
-
-
-	input:checked + .slider:before
+	input:checked ~ * .slider
 		transform: translateX(26px)
